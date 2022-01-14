@@ -2,7 +2,7 @@ package br.com.alexandre.mercado.controller;
 
 import java.util.List;
 
-import org.springframework.ui.Model;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -25,7 +25,7 @@ public class LoginController {
 
     @PostMapping(value = "api/logar")
     public String postMethod(@RequestBody Login entity) {
-        return "/login";
+        return "redirect:/vendas";
     }
 
 }
